@@ -125,10 +125,6 @@ function Alljobs() {
     <div>
       <div className="d-flex justify-content-between">
         <PageTitle title="All Jobs" />
-        <Link to="/posted-jobs/new">
-          {" "}
-          <button className="primary-outlined-btn">New Job</button>
-        </Link>
       </div>
       <Table columns={columns} dataSource={data} />
     </div>

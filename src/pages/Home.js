@@ -11,6 +11,7 @@ function Home() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [data, setData] = useState([]);
+  const user = JSON.parse(localStorage.getItem('user'));
   const [filters, setFilters ] = useState({
     location:'',
     industry:'',
@@ -77,11 +78,11 @@ function Home() {
               </div>
             </div>
               
-              <button className="primary-outlined-btn w-100 mt-2"
+         {user.id !== 'admin' &&    <button className="primary-outlined-btn w-100 mt-2"
               onClick={()=> navigate(`job-description/${job.id}`)}
               >
-                Apply Now
-              </button>
+                Apply Now 
+              </button> }
             </div>
           </Col>
         ))}
