@@ -1,0 +1,35 @@
+.loader-parent {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(31, 31, 31, 0.685);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 989;
+}
+.page-title h1{
+  font-size:22px;
+  text-transform:uppercase;
+}
+.underline{
+  text-decoration: underline;
+  cursor:pointer;
+}
+.job-card{
+  border: 1px solid rgb(188, 182, 182) !important;
+  padding: 10px !important;
+  border-radius: 0px !important;
+}
+.job-card h3{
+  text-transform:uppercase;
+  font-size: 18px;
+}
+.already-applied{
+background-color:green;
+font-size :16px;
+padding:15px;
+color:rgb(255, 255, 255);
+}
+.ri-notification-line{
+  color: white !important;
+}
